@@ -1,0 +1,75 @@
+:root{
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #cccccc;
+  --dark-grey: #929292;
+
+  --primary-color-green: #0E9749;
+  --primary-sky-green: #2ace71;
+  --primary-color-dark-green: #051B0F;
+  --primary-shadow-green: #02200F66;
+
+  --secondary-color-cream: #F5F0D9;
+  --secondary-color-sky-orange: #051B0F; 
+  --secondary-color-dark-orange: #b13c19;
+
+  --blue-button: #4e6a7f;
+
+  --shadow: #00000054;
+}
+
+body{
+  background-color: var(--secondary-color-cream);
+}
+
+header{
+  background-image: linear-gradient(#0E974950, #0E974950), url("../img/15.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 10px;
+}
+
+header .logo{
+  height: 120px;
+}
+
+header h1{
+  color: var(--white);
+  text-align: center;
+  margin: 20px;
+}
+
+nav a{
+  padding: 15px;
+  text-decoration: none;
+  color: var(--secondary-color-cream);
+}
+
+nav a:hover{
+  color: var(--white);
+}
+
+section{
+  padding-top: 30px;
+}
+
+.about .mapa{
+  height: 250px;
+}
+
+footer{
+  padding-top: 30px;
+  background-color: var(--primary-color-green);
+  color: var(--primary-color-dark-green);
+}
+
+footer .logo{
+  height: 150px;
+}
+
+.footer-bottom{
+  background-color: var(--primary-shadow-green);
+  padding: 7px;
+  text-align: center;
+}
