@@ -1,3 +1,4 @@
+/*Variables globlales*/
 :root{
   --white: #ffffff;
   --black: #000000;
@@ -10,11 +11,6 @@
   --primary-shadow-green: #02200F66;
 
   --secondary-color-cream: #F5F0D9;
-  --secondary-color-sky-orange: #051B0F; 
-  --secondary-color-dark-orange: #b13c19;
-
-  --blue-button: #4e6a7f;
-
   --shadow: #00000054;
 }
 
@@ -58,6 +54,31 @@ section{
   height: 250px;
 }
 
+/* GALLERY */
+.gallery{
+  text-align: center;
+  padding: 0 30px 30px 0;
+}
+
+.grid-container {
+  padding: 30px 0;
+  columns: 5 100px;
+  column-gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid-container img {
+  width: 100%;
+  border-radius: 5px;
+  transition: all .25s ease-in-out;
+  border: 2px solid var(--white);
+  box-shadow: 5px 5px 5px var(--shadow);
+  margin: 5px;
+}
+/* GALLERY */
+
+/* FOOTER */
 footer{
   padding-top: 30px;
   background-color: var(--primary-color-green);
@@ -73,3 +94,4 @@ footer .logo{
   padding: 7px;
   text-align: center;
 }
+/* FOOTER */
