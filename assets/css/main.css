@@ -55,6 +55,56 @@ section, .gallery-collage, .about-content, .home-content{
   padding: 2px;
 }
 
+
+/* MEMBER */
+
+.member-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member-info{
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.member-info hr{
+  width: 60%;
+  border: 1px solid var(--primary-color-green);
+  margin: 5px;
+}
+
+.member-contact{
+  display: none;
+}
+
+.member-contact p{
+  color: var(--primary-color-dark-green);
+  line-height: 20px;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.member-info:hover{
+  transition: 0.5s;
+  background-color: #ececec;
+  border: 1px solid var(--grey);
+  cursor: context-menu;
+}
+
+.member-info:hover .member-contact{
+  display: block;
+}
+
+.member-info:hover h4, .member-info:hover h5, .member-info:hover hr{
+  display: none;
+}
+/* MEMBER */
+
 /* GALLERY */
 .gallery-collage {
   text-align: center;
@@ -91,47 +141,3 @@ footer .logo{
   text-align: center;
 }
 /* FOOTER */
-
-.member-cards{
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.member-cards{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  transition: 0.5s;
-  justify-content: space-evenly;
-}
-
-.member-info{
-  width: 300px;
-  padding: 10px;
-}
-
-.member-contact{
-  display: none;
-}
-
-.member-contact p{
-  margin: 5px;
-  color: var(--primary-color-dark-green);
-  line-height: 20px;
-}
-
-.member-info:hover{
-  transition: 0.5s;
-  background-color: #ececec;
-  border: 1px solid var(--grey);
-  cursor: context-menu;
-}
-
-.member-cards:hover .member-contact{
-  display: block;
-  padding: 15px;
-}
-
-.member-cards:hover h4, .member-cards:hover h5, .member-cards:hover hr{
-  display: none;
-}
